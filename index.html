@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<title>Teste Frontend VAGAS.com</title>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+	<main class="box">
+		<div class="header">
+			<h1 class="title">Formulário<br />para compra de<br /><span>Pacote de Stickers</span></h1>
+		</div>
+		<br>
+		<form class="form">
+			<br>
+			<fieldset class="fieldset">
+				<label class="label">Quais stickers:</label>
+				<br>
+				<div><input type="checkbox" name="react"/> React</div>
+				<div><input type="checkbox" name="vue"/> Vue</div>
+				<div><input type="checkbox" name="angular"/> Angular</div>
+			</fieldset>
+			<div class="space-md"></div>
+			<fieldset class="fieldset">
+				<label class="label">Quantos stickers de cada?</label>
+				<div class="space"></div>
+				<div class="counter">
+                    <button type="button" onclick=menos()>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42">
+                            <path d="M4.667 0A4.668 4.668 0 0 0 0 4.667v32.666A4.668 4.668 0 0 0 4.667 42h32.666A4.668 4.668 0 0 0 42 37.333V4.667A4.668 4.668 0 0 0 37.333 0H4.667zm28 23.333H9.333v-4.666h23.334v4.666z" /></svg>
+                    </button>
+                    <input type="text" placeholder="0" id="clicks" value="0"/>
+                    <button type="button" onclick=mais()>
+					<svg xmlns="http://www.w3.org/2000/svg" width="42" height="42">
+                        <path d="M4.667 42h32.666A4.668 4.668 0 0 0 42 37.333V4.667A4.668 4.668 0 0 0 37.333 0H4.667A4.668 4.668 0 0 0 0 4.667v32.666A4.668 4.668 0 0 0 4.667 42zm4.666-23.333h9.334V9.333h4.666v9.334h9.334v4.666h-9.334v9.334h-4.666v-9.334H9.333v-4.666z" /></svg>
+                    </button>
+				</div>
+			</fieldset>
+			<br>
+			<fieldset class="fieldset">
+				<label class="label">Observações:</label>
+				<div class="space"></div>
+				<textarea name="descricao" placeholder="Alguma dúvida? Recado?" required></textarea>
+			</fieldset>
+			<br>
+			<div class="footer">
+				<button type="submit">Enviar</button>
+			</div>
+		</form>
+	</main>
+
+	<script src="index.js"></script>
+</body>
+
+</html>
